@@ -1,0 +1,13 @@
+@media (min-width: 768px){
+	.navbar-default .collapse.navbar-collapse{
+		padding: 0px;
+		border-bottom:4px solid #343434;
+	}
+
+	/**
+	* Bootstrap On hove dropdown menu display
+	**/
+	ul.nav li.dropdown:hover > ul.dropdown-menu {
+		display: block;    
+	}
+}

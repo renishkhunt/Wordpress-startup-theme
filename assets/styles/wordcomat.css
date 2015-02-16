@@ -1,0 +1,176 @@
+/******************************************
+* Common Js
+*******************************************/
+/* Mozilla based browsers */
+::-moz-selection {
+       background-color: #00a99d;
+       color: #ffffff;
+}
+
+/* Works in Safari */
+::selection {
+       background-color: #00a99d;
+       color: #ffffff;
+}
+body,.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+	font-family: 'Roboto', sans-serif;	
+	font-weight: normal;
+}	
+body{
+	background-color: #e7e7e7;
+	font-size: 16px;
+	line-height: 30px;
+}
+pre{
+	border:0px;
+	border-radius: 0px;
+}
+/******************************************
+* Overwrite Bootstrtap CSS
+******************************************/
+.navbar-default{
+	background: #ffffff;
+	border-radius: 0px;
+	box-shadow: 0px 0px 0px 0px;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #343434;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+	color: #343434;
+}
+.navbar-default .navbar-nav>li.active a,
+.navbar-default .navbar-nav>li a:hover{
+	background:#00a99d;
+	color: #ffffff; 
+}
+.navbar-default .navbar-nav .dropdown-menu{
+	padding:0px;
+	margin: 0px;
+}
+.navbar-default .navbar-nav .dropdown-menu li a{
+	padding: 12px 20px;
+}
+/*******************************************
+* Theme Header CSS
+*******************************************/
+header .site-branding{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+header .site-branding .site-title{
+	padding-bottom: 0px;
+	margin: 0px;
+}
+header .site-branding .site-description{
+	font-size: 18px;
+}
+/*******************************************
+* Home Page Article Design
+*******************************************/
+#content article{
+	background:#ffffff;
+	padding:20px;
+	margin: 20px 0px;
+}
+article .post-header .post-title{
+	margin:0px;
+}
+article .post-header .post-meta a,
+article .post-content a{
+	color:#00a99d;
+}
+/*****************************************
+* Posts Listing Paggination
+******************************************/
+.paggination ul{
+	list-style: none;
+	list-style-type: none;
+	text-align: center;
+}
+.paggination ul li{
+	display: inline-block;
+}
+.paggination ul li a,
+.paggination ul li span{
+	padding: 10px 15px;
+}
+.paggination ul li a,
+.paggination ul li span{
+	background-color: #ffffff;
+}
+.paggination ul li span.current{
+	background-color: #00a99d;
+	color: #ffffff;
+}
+/******************************************
+* Design Widgets
+******************************************/
+#secondary.widget-area aside{
+	background-color: #ffffff;
+	padding:20px;
+	margin: 20px 0px;
+}
+#secondary.widget-area aside h1{
+	font-size: 24px;
+	border-bottom: 1px solid #d2d2d3;
+	padding-bottom:10px;
+}
+#secondary.widget-area aside ul{
+	list-style: none;
+	list-style-type: none;
+	padding:0px;
+	margin:0px;
+}
+#secondary.widget-area aside ul li{
+	color: #c3c3c3;
+}
+#secondary.widget-area aside ul li{
+	padding:5px 10px;
+	display: block;
+}
+#secondary.widget-area aside ul li:hover,
+#secondary.widget-area aside ul li:hover a{
+	background: #00a99d;
+	color: #ffffff;
+}
+
+/**
+* Widgets Calendar design
+**/
+#secondary.widget-area aside table{
+	width: 100%;
+}
+#secondary.widget-area aside table caption{
+	text-align: center;
+}
+#secondary.widget-area aside table td,
+#secondary.widget-area aside table th{
+	text-align: center;
+}
+#secondary.widget-area aside table td:hover,
+#secondary.widget-area aside table td:hover a{
+	background: #00a99d;
+	color: #ffffff;
+}
+a,
+a:hover,
+a:focus{
+	color:#343434;
+	text-decoration: none;
+}
+
+/**
+* Wordpress Comments
+**/
+#comments .comment-list{
+	list-style-type: none;
+	list-style: none;
+	padding:0px;
+}
+#comments .comment-form textarea{
+	width: 100%;
+	padding:10px;
+}
