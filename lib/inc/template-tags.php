@@ -36,11 +36,11 @@ function matword_paging_nav() {
 endif;
 
 
-if ( !function_exists( 'wpex_pagination' ) ) :
+if ( !function_exists( 'matword_pagination' ) ) :
 /**
 * Add number paggination
 **/	
-	function wpex_pagination() {
+	function matword_pagination() {
 		
 		$prev_arrow = is_rtl() ? '&rarr;' : '&larr;';
 		$next_arrow = is_rtl() ? '&larr;' : '&rarr;';

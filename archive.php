@@ -93,7 +93,7 @@ get_header(); ?>
 					<?php endwhile; ?>
 
 					<div class='paggination'>
-						<?php print wpex_pagination(); ?>
+						<?php print matword_pagination(); ?>
 					</div>
 
 				</div>
