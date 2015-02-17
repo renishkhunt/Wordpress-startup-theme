@@ -42,8 +42,18 @@ pre{
 	color: #343434;
 }
 .navbar-default .navbar-nav>li.active a,
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:focus,
+.dropdown-menu>.active>a:hover,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.open>a,
+.navbar .navbar-nav .open .dropdown-menu>.active>a,
+.navbar .navbar-nav .open .dropdown-menu>.active>a:focus,
+.navbar .navbar-nav .open .dropdown-menu>.active>a:hover,
 .navbar-default .navbar-nav>li a:hover{
 	background:#00a99d;
+	background-image:linear-gradient(to bottom,#00a99d 0,#00a99d 100%);
+	background-color:#00a99d;
 	color: #ffffff; 
 }
 .navbar-default .navbar-nav .dropdown-menu{
