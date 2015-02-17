@@ -102,15 +102,20 @@ if ( ! function_exists( 'matword_posted_on' ) ) :
  */
 function matword_posted_on() {
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+	
+	/* Posts Modified time
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
-	}
+	} 
+        // add this two line into sprintf function below on last.
+	 	esc_attr( get_the_modified_date( 'c' ) ),
+		esc_html( get_the_modified_date() )
+
+	*/
 
 	$time_string = sprintf( $time_string,
 		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date() ),
-		esc_attr( get_the_modified_date( 'c' ) ),
-		esc_html( get_the_modified_date() )
+		esc_html( get_the_date() )
 	);
 
 	$posted_on = sprintf(
