@@ -78,7 +78,7 @@ header .site-branding .site-description{
 	font-size: 18px;
 }
 /*******************************************
-* Home Page Article Design
+* Article Design
 *******************************************/
 #content article{
 	background:#ffffff;
@@ -91,6 +91,13 @@ article .post-header .post-title{
 article .post-header .post-meta a,
 article .post-content a{
 	color:#00a99d;
+}
+article .post-meta{
+	font-size: 14px;
+	color: #a1a1a1;
+}
+article .post-content{
+	margin: 10px 0px;
 }
 /*****************************************
 * Posts Listing Paggination
