@@ -19,7 +19,7 @@
 				if ( $categories_list && matword_categorized_blog() ) :
 			?>
 			<span class="cat-links">
-				<?php printf( __( 'Posted in %1$s', 'matwordtheme' ), $categories_list ); ?>
+				<?php printf( __( '<i class="glyphicon glyphicon-pushpin"></i> %1$s', 'matwordtheme' ), $categories_list ); ?>
 			</span>
 			<?php endif; // End if categories ?>
 
@@ -29,7 +29,7 @@
 				if ( $tags_list ) :
 			?>
 			<span class="tags-links">
-				<?php printf( __( 'Tagged %1$s', 'matwordtheme' ), $tags_list ); ?>
+				<?php printf( __( '<i class="fa fa-tags"></i> %1$s', 'matwordtheme' ), $tags_list ); ?>
 			</span>
 			<?php endif; // End if $tags_list ?>
 		<?php endif; // End if 'post' == get_post_type() ?>
